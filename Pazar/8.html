@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js ile çalışmak</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #444;
+            text-align: center;
+            font-weight: 400;
+            font-style: normal;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            background-color: #31bf1c;
+            background-image: linear-gradient(180deg, #b71c1c 0%, #5a267a 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-blend-mode: normal;
+            background-origin: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="border: radius 200px; background-color: aqua;
+    text-align: center padding: 10px;">justify-content ile çalışmak</h2>
+    <button onclick="document.getElementById('1').innerHTML = 'aşşağıda tarih bilgisi var';" type="button">
+        <h2 style="height: 3px;"></h2>
+        Tarih ve Zamanı Göster
+    </button>
+    <p id="1">tarih ve Zaman</p>
+    <p id="2">tarih ve Zaman</p>
+    <p id="3">tarih ve Zaman</p>
+    <script>
+        document.getElementById("2").innerHTML = Date();
+    </script>
+</body>
+
+</html>
